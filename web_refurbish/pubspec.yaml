@@ -1,0 +1,47 @@
+name: refurbish_web
+description: A new Flutter project.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+#  cupertino_icons: ^1.0.1
+  cupertino_icons: ^1.0.2
+  url_launcher: ^5.7.10
+  validadores: ^1.0.2
+  http: ^0.13.3
+  crypto:
+  font_awesome_flutter: ^8.11.0
+  cached_network_image: ^2.2.0+1
+  material_design_icons_flutter: ^4.0.5345
+  google_fonts: 2.2.0
+  printing: ^4.1.0
+  rxdart: ^0.25.0
+  shared_preferences: ^2.0.7
+  path_provider: ^2.0.3
+  open_file: ^3.2.1
+  universal_html: ^2.0.8
+  honeywell_scanner: ^3.1.1+8
+  flutter_slidable: ^0.5.4
+  syncfusion_flutter_xlsio: ^19.2.60-beta
+  get: 4.3.8
+  flutter_beep: ^1.0.0
+  percent_indicator: ^3.4.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+
+
+
+

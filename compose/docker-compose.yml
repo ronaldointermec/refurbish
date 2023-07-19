@@ -1,0 +1,29 @@
+version: "2"
+
+services:
+  api_refurbish:
+    logging:
+      driver: "json-file"
+      options:
+          max-size: "10m"
+    restart: always
+    container_name: api_refurbish
+    build: 
+      context: ../api_refurbish
+      dockerfile: ../api_refurbish/Dockerfile
+    ports:
+      - 8096:3333
+    # volumes:
+    #   - ../api_refurbish:/usr/src/app
+  web_refurbish:
+    logging:
+      driver: "json-file"
+      options:
+          max-size: "10m"  
+    restart: always
+    container_name: web_refurbish
+    build: 
+      dockerfile: ../web_refurbish/Dockerfile
+      context: ../web_refurbish
+    ports:
+      - 8095:80
